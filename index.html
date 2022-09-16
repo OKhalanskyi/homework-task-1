@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework-1</title>
+    <link rel="stylesheet" href="./styles/modal-window.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main class="container">
+
+        <table class="notes-list">
+            <thead>
+                <tr class="">
+                    <th>Name</th>
+                    <th>Created</th>
+                    <th>Category</th>
+                    <th>Content</th>
+                    <th>Dates</th>
+                    <th><div class="header-icons"></div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>first</th>
+                    <th>first</th>
+                    <th>first</th>
+                    <th>first</th>
+                    <th>first</th>
+                    <th><div class="icons"></div></th>
+                </tr>
+            </tbody>
+        </table>
+        <div class="create-note">
+            <button class="open-modal"></button>
+        </div>
+        <table class="summary">
+            <thead>
+                <tr>
+                    <th>Note category</th>
+                    <th>Active</th>
+                    <th class="open-archive">Archived</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Task</th>
+                    <th>1</th>
+                    <th>0</th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <div class="modal-window create">
+        <form action="" class="modal create">
+            <input type="text" class="name" placeholder="name">
+            <div class="category-choice">
+                <input type="radio" class="cat-task" value="task">
+                <input type="radio" class="cat-thought" value="thought">
+                <input type="radio" class="cat-idea" value="idea">
+            </div>
+            <input type="text" class="content"placeholder="content">
+            <button class="submit">create</button>
+            <button class="close-create">close</button>
+        </form>
+    </div>
+    <div class="modal-window archive">
+        <div class="modal archive">
+            <table class="archive-list">
+                <thead>
+                    <tr class="">
+                        <th>Name</th>
+                        <th>Created</th>
+                        <th>Category</th>
+                        <th>Content</th>
+                        <th>Dates</th>
+                        <th><div class="header-icons"></div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>first</th>
+                        <th>first</th>
+                        <th>first</th>
+                        <th>first</th>
+                        <th>first</th>
+                        <th><div class="icons"></div></th>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="close-archive">close</button>
+        </div>
+    </div>
+    <script src="js/modal-window.js"></script>
+</body>
+</html>
