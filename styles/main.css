@@ -1,3 +1,9 @@
 .open-archive:hover{
     color: aqua;
 }
+.label-mistake{
+    display: none;
+}
+.label-mistake.active{
+    display: flex;
+}

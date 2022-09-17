@@ -11,16 +11,16 @@
 
         <table class="notes-list">
             <thead>
-                <tr class="">
+                <tr>
                     <th>Name</th>
                     <th>Created</th>
                     <th>Category</th>
                     <th>Content</th>
                     <th>Dates</th>
-                    <th><div class="header-icons"></div></th>
+                    <th><div><button class='toEdit icon_${i}'>edit</button><button class='toDelete icon_${i}'>delete</button></div></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-notes">
                 <tr>
                     <th>first</th>
                     <th>first</th>
@@ -53,15 +53,25 @@
     </main>
     <div class="modal-window create">
         <form action="" class="modal create">
-            <input type="text" class="name" placeholder="name">
-            <div class="category-choice">
-                <input type="radio" class="cat-task" value="task">
-                <input type="radio" class="cat-thought" value="thought">
-                <input type="radio" class="cat-idea" value="idea">
+            <div>
+                <label class="label-mistake">mistake</label>
+                <input type="text" class="name" placeholder="name">
+                <div class="category-choice">
+                    <label>
+                        <input type="radio" class="cat-task" value="task" name="rb" checked>task
+                    </label>
+                    <label>
+                        <input type="radio" class="cat-thought" value="thought" name="rb">thought
+                    </label>
+                    <label>
+                        <input type="radio" class="cat-idea" value="idea" name="rb">idea
+                    </label>
+                </div>
+                <input type="text" class="content"placeholder="content">
+                <button class="submit">create</button>
             </div>
-            <input type="text" class="content"placeholder="content">
-            <button class="submit">create</button>
-            <button class="close-create">close</button>
+
+            <a class="close-create">close</a>
         </form>
     </div>
     <div class="modal-window archive">
@@ -92,5 +102,6 @@
         </div>
     </div>
     <script src="js/modal-window.js"></script>
+    <script src="js/create-todo.js"></script>
 </body>
 </html>
