@@ -1,3 +1,4 @@
+let labelMistake = document.querySelector('.label-mistake')
 const modalOpenClose = (windowSelector, formSelector, openSelector, closeSelector) => {
     let modalBack = document.querySelector(windowSelector)
     let modalForm = document.querySelector(formSelector)

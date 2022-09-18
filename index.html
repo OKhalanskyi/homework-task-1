@@ -20,15 +20,8 @@
                     <th><div><button class='toEdit icon_${i}'>edit</button><button class='toDelete icon_${i}'>delete</button></div></th>
                 </tr>
             </thead>
-            <tbody class="table-notes">
-                <tr>
-                    <th>first</th>
-                    <th>first</th>
-                    <th>first</th>
-                    <th>first</th>
-                    <th>first</th>
-                    <th><div class="icons"></div></th>
-                </tr>
+            <tbody class="table-notes" id="todoList">
+
             </tbody>
         </table>
         <div class="create-note">
@@ -68,7 +61,7 @@
                     </label>
                 </div>
                 <input type="text" class="content"placeholder="content">
-                <button class="submit">create</button>
+                <button type="submit" class="submit">create</button>
             </div>
 
             <a class="close-create">close</a>
@@ -87,7 +80,7 @@
                         <th><div class="header-icons"></div></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="table-notes" id="archiveList">
                     <tr>
                         <th>first</th>
                         <th>first</th>
@@ -102,6 +95,6 @@
         </div>
     </div>
     <script src="js/modal-window.js"></script>
-    <script src="js/create-todo.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>
