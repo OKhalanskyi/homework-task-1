@@ -7,3 +7,44 @@
 .label-mistake.active{
     display: flex;
 }
+.notes-list {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 800px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.notes-list thead tr {
+    background-color: gray;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.notes-list th,
+.notes-list td {
+    padding: 12px 15px;
+}
+
+.notes-list tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.notes-list tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.notes-list tbody tr:last-of-type {
+    border-bottom: 2px gray;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.create-note{
+    display: flex;
+    justify-content: end;
+}

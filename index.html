@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <main class="container">
-
-        <table class="notes-list">
-            <thead>
+    <div class="container">
+        <main>
+            <table class="notes-list">
+                <thead>
                 <tr>
                     <th>Name</th>
                     <th>Created</th>
@@ -19,23 +19,23 @@
                     <th>Dates</th>
                     <th><div><button class='toEdit icon_${i}'>edit</button><button class='toDelete icon_${i}'>delete</button></div></th>
                 </tr>
-            </thead>
-            <tbody class="table-notes" id="todoList">
+                </thead>
+                <tbody class="table-notes" id="todoList">
 
-            </tbody>
-        </table>
-        <div class="create-note">
-            <button class="open-modal"></button>
-        </div>
-        <table class="summary">
-            <thead>
+                </tbody>
+            </table>
+            <div class="create-note">
+                <button class="open-modal">Create note</button>
+            </div>
+            <table class="notes-list">
+                <thead>
                 <tr>
                     <th>Note category</th>
                     <th>Active</th>
                     <th class="open-archive">Archived</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr class="summary-tasks">
                     <th>Task</th>
                     <th id="active-tasks"></th>
@@ -51,36 +51,37 @@
                     <th id="active-ideas"></th>
                     <th id="archive-ideas"></th>
                 </tr>
-            </tbody>
-        </table>
-    </main>
-    <div class="modal-window create">
-        <form action="" class="modal create">
-            <div>
-                <label class="label-mistake">mistake</label>
-                <input type="text" class="name" placeholder="name">
-                <div class="category-choice">
-                    <label>
-                        <input type="radio" class="cat-task" value="task" name="rb" checked>task
-                    </label>
-                    <label>
-                        <input type="radio" class="cat-thought" value="thought" name="rb">thought
-                    </label>
-                    <label>
-                        <input type="radio" class="cat-idea" value="idea" name="rb">idea
-                    </label>
-                </div>
-                <input type="text" class="content"placeholder="content">
-                <button type="submit" class="submit">create</button>
-            </div>
+                </tbody>
+            </table>
+        </main>
+        <div class="modal-window create">
+            <form action="" class="modal create">
+                <div>
+                    <label class="label-mistake">mistake</label>
 
-            <a class="close-create">close</a>
-        </form>
-    </div>
-    <div class="modal-window archive">
-        <div class="modal archive">
-            <table class="archive-list">
-                <thead>
+                    <div class="category-choice">
+                        <input type="text" class="name" placeholder="name">
+                        <label>
+                            <input type="radio" class="cat-task" value="task" name="rb" checked>task
+                        </label>
+                        <label>
+                            <input type="radio" class="cat-thought" value="thought" name="rb">thought
+                        </label>
+                        <label>
+                            <input type="radio" class="cat-idea" value="idea" name="rb">idea
+                        </label>
+                        <input type="text" class="content"placeholder="content">
+                    </div>
+                    <button type="submit" class="submit">create</button>
+                </div>
+
+                <a class="close-create">close</a>
+            </form>
+        </div>
+        <div class="modal-window archive">
+            <div class="modal archive">
+                <table class="archive-list notes-list">
+                    <thead>
                     <tr class="">
                         <th>Name</th>
                         <th>Created</th>
@@ -89,21 +90,16 @@
                         <th>Dates</th>
                         <th><div class="header-icons"></div></th>
                     </tr>
-                </thead>
-                <tbody class="table-notes" id="archiveList">
-                    <tr>
-                        <th>first</th>
-                        <th>first</th>
-                        <th>first</th>
-                        <th>first</th>
-                        <th>first</th>
-                        <th><div class="icons"></div></th>
-                    </tr>
-                </tbody>
-            </table>
-            <button class="close-archive">close</button>
+                    </thead>
+                    <tbody class="table-notes" id="archiveList">
+
+                    </tbody>
+                </table>
+                <button class="close-archive">close</button>
+            </div>
         </div>
     </div>
+
     <script src="js/modal-window.js"></script>
     <script src="js/todo.js"></script>
 </body>

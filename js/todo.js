@@ -21,7 +21,6 @@ if (localStorage.getItem('todos')){
     })
 }
 
-
 createTodoForm.addEventListener('submit',createTodo)
 todoList.addEventListener('click', deleteTodo)
 archiveList.addEventListener('click',deleteTodo)

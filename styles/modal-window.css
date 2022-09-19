@@ -22,7 +22,6 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: #fff;
-    width: 400px;
     padding: 25px;
     transition: 0.5s all;
 }
@@ -30,5 +29,27 @@
 .modal.active {
     transform: translate(-50%, -50%) scale(1);
     transition: 0.5s all;
+}
+.category-choice{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    align-items:start;
+    justify-content: space-between;
+}
+.submit{
+    margin: 20px 0px 20px 40px;
+}
+.close-create{
+    margin: 20px 0px 20px 50px;
+}
+.modal.archive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.close-archive{
+    width: 100px;
 }
 
